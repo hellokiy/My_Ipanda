@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d2e5ed"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/a"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#295bb1">
+
+        <ImageView
+            android:id="@+id/Login_retreat_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/personal_back_img" />
+
+        <TextView
+            android:id="@+id/top_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="登陆"
+            android:textColor="#f2f0f0"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/Login_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="#295bb1"
+            android:text="注册"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/a"
+        android:layout_margin="15dp"
+        android:text="使用社交账号登陆到熊猫频道"
+        android:textColor="#295bb1" />
+
+    <RadioGroup
+        android:id="@+id/login_RadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/Login_weixin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/login_weixin"
+            android:gravity="center"
+            android:text="微信" />
+
+        <RadioButton
+            android:id="@+id/Login_qq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/login_qq"
+            android:gravity="center"
+            android:text="QQ" />
+
+        <RadioButton
+            android:id="@+id/Login_weibo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/login_sina"
+            android:gravity="center"
+            android:text="微博" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_RadioGroup"
+        android:layout_margin="15dp"
+        android:text="CNTV通行证" />
+
+    <EditText
+        android:id="@+id/Login_username"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/c"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/myshape"
+        android:hint="账号：请输入邮箱或手机号"
+        android:paddingLeft="5dp" />
+
+    <EditText
+        android:id="@+id/Login_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/Login_username"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/myshape"
+        android:hint="请输入密码"
+        android:paddingLeft="5dp" />
+
+    <TextView
+        android:id="@+id/Login_forget_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/Login_password"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:text="忘记密码？"
+        android:textColor="#181fe9" />
+
+    <Button
+        android:id="@+id/Login_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Login_forget_password"
+        android:layout_margin="15dp"
+        android:background="@drawable/mybtnshape"
+        android:text="登陆"
+        android:textColor="#fff" />
+
+</RelativeLayout>

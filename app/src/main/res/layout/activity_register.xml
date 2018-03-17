@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d2e5ed">
+
+    <RelativeLayout
+        android:id="@+id/a"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#295bb1">
+
+        <ImageView
+            android:id="@+id/Register_retreat_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/personal_back_img" />
+
+        <TextView
+            android:id="@+id/top_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="注册"
+            android:textColor="#d2e5ed"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/register_RadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/a"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/Register_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="手机注册"
+            android:textColor="#295bb1"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="#b9b3b3" />
+
+        <RadioButton
+            android:id="@+id/Register_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="邮箱注册"
+            android:textColor="#295bb1"
+            android:textSize="25sp" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/register_Frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/register_RadioGroup" />
+
+
+</RelativeLayout>

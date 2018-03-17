@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="海外用户暂不支持手机号注册，您可以使用邮箱注册"
+        android:textColor="#295bb1" />
+
+    <EditText
+        android:id="@+id/Register_username"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/a"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/myshape"
+        android:hint="账号：请输入手机号"
+        android:paddingLeft="5dp" />
+
+    <TextView
+        android:id="@+id/hint_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Register_username"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#fd070f" />
+
+    <RelativeLayout
+        android:id="@+id/b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hint_mobile"
+        android:layout_marginTop="1dp">
+
+        <ImageView
+            android:id="@+id/getImage_Captcha"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/yanzheng_image"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/Register_image_Captcha"
+            android:layout_width="400dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/getImage_Captcha"
+            android:layout_toRightOf="@+id/getImage_Captcha"
+            android:background="@drawable/myshape"
+            android:hint="请输入图片验证码"
+            android:paddingLeft="5dp" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/hint_image_Captcha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="2dp"
+        android:textColor="#fd070f" />
+
+    <RelativeLayout
+        android:id="@+id/c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hint_image_Captcha"
+        android:layout_marginTop="1dp">
+
+        <Button
+            android:id="@+id/Register_getMobile_Captcha"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="12dp"
+            android:background="#295bb1"
+            android:src="@drawable/yanzheng_image"
+            android:text="获取验证码"
+            android:textColor="#f5f5f5"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/Register_mobile_Captcha"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/Register_getMobile_Captcha"
+            android:background="@drawable/myshape"
+            android:hint="请输入收到的验证码"
+            android:paddingLeft="5dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hint_mobile_Captcha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/c"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="1dp"
+        android:textColor="#fd070f" />
+
+
+    <EditText
+        android:id="@+id/Register_passwird"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/c"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/myshape"
+        android:hint="请输入密码"
+        android:paddingLeft="5dp" />
+
+    <TextView
+        android:id="@+id/hint_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Register_passwird"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="1dp"
+        android:textColor="#fd070f" />
+
+    <CheckBox
+        android:id="@+id/Register_CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hint_password"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="1dp" />
+
+
+    <TextView
+        android:id="@+id/Register_protocol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hint_password"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/Register_CheckBox"
+        android:text="我已阅读并同意《央视网网络使用协议》"
+        android:textColor="#295bb1" />
+
+    <Button
+        android:id="@+id/Register_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Register_protocol"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/mybtnshape"
+        android:text="注册"
+        android:textColor="#fff" />
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/home_title"
+        layout="@layout/top_layout" />
+
+    <RadioGroup
+        android:id="@+id/Home_Rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rb_color"
+            android:button="@null"
+            android:drawableTop="@mipmap/tab_home_normal"
+            android:gravity="center"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rb_observe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rb_color"
+            android:button="@null"
+            android:drawableTop="@mipmap/tab_panda_eye_normal"
+            android:gravity="center"
+            android:text="熊猫观察" />
+
+        <RadioButton
+            android:id="@+id/rb_culture"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rb_color"
+            android:button="@null"
+            android:drawableTop="@mipmap/tab_panda_culture_normals"
+            android:gravity="center"
+            android:text="熊猫文化" />
+
+        <RadioButton
+            android:id="@+id/rb_live"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rb_color"
+            android:button="@null"
+            android:drawableTop="@mipmap/tab_panda_live_normal"
+            android:gravity="center"
+            android:text="熊猫直播" />
+
+        <RadioButton
+            android:id="@+id/rb_china"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rb_color"
+            android:button="@null"
+            android:drawableTop="@mipmap/tab_live_china_normal"
+            android:gravity="center"
+            android:text="直播中国" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/Home_Frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/Home_Rg"
+        android:layout_below="@+id/home_title" />
+
+</RelativeLayout>
