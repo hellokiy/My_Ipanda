@@ -4,6 +4,7 @@
     android:layout_height="?actionBarSize"
     android:background="#1c39dc">
 
+
     <ImageView
         android:id="@+id/top_ipanda_img"
         android:layout_width="wrap_content"
